@@ -6,7 +6,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6{
     font-family: 'candal', serif;
     color: #404040;
     margin: 5px;
@@ -212,6 +212,7 @@ header .menu-toggle {
     margin: 20px auto;
     border-radius: 5px;
     background: #fff;
+
 }
 
 .content .main-content .post .read-more {
@@ -242,6 +243,10 @@ header .menu-toggle {
     width: 60%;
     padding: 10px;
     float: right;
+}
+.content .main-content .post .post-preview i span{
+    font-family: 'Lora', serif;
+    padding: 7px;
 }
 
 
@@ -387,6 +392,11 @@ header .menu-toggle {
 .post-slider .post-wrapper .post .post-info {
     height: 130px;
     padding: 0px 5px;
+    
+}
+.post-slider .post-wrapper .post .post-info i span{
+    font-family: 'Lora', serif;
+    padding: 7px;
 }
 
 .post-slider .post-wrapper .post .slider-image {
@@ -464,10 +474,7 @@ header .menu-toggle {
     margin-bottom: 8px;
 }
 
-.footer .footer-content .about .contact span {
-    display: block;
-    font-family: 'Lora', serif;
-}
+
 
 
 .footer .footer-content .about .socials a {
@@ -573,9 +580,11 @@ header .menu-toggle {
         height: auto;
         flex-direction: column;
     }
-    .footer .footer-content .contact-form{
+
+    .footer .footer-content .contact-form {
         padding-bottom: 90px;
     }
+
     .footer .footer-content .contact-form .contact-btn {
         width: 100%;
     }
@@ -585,24 +594,25 @@ header .menu-toggle {
 /* For footer ends */
 
 /* Posts :vertical starts */
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
     .content .main-content .post {
         height: auto;
     }
-    
+
     .content .main-content .post .post-image {
         width: 100%;
     }
-    
+
     .content .main-content .post .post-preview {
         width: 100%;
     }
+
     .content .main-content .post .read-more {
         position: static;
         display: block;
         width: 100%;
         text-align: center;
-     
+
     }
 
 }

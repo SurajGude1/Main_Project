@@ -1,36 +1,44 @@
 /* Main style Starts */
 
 /* Default font family */
-h1, h2, h3, h4, h5, h6{
-    font-family: 'candal',serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'candal', serif;
     color: #404040;
     margin: 5px;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-.clearfix::after{
+.clearfix::after {
     content: '';
     display: block;
     clear: both;
 }
-.btn{
-    padding: .5rem 1rem ;
+
+.btn {
+    padding: .5rem 1rem;
     background: #006669;
     color: #fff;
     border: 1px solid transparent;
     border-radius: 1rem;
+    font-size: 1.08em;
+    font-family: 'Lora', serif;
 }
 
-.btn-big{
+.btn-big {
     padding: .7rem 1.3rem;
     line-height: 1.3rem;
 }
 
-.btn:hover{
+.btn:hover {
     color: #fff !important;
     background-color: #004749;
 }
@@ -39,13 +47,14 @@ a{
     box-sizing: border-box;
 }
 
-.text-input{
+.text-input {
     padding: .7rem 1rem;
     display: block;
     width: 100%;
     border-radius: 5px;
-    border-bottom: 1px solid lightgrey;
-    border-right: 1px solid lightgrey;
+    border: 1px solid grey;
+    /* border-bottom: 1px solid lightgrey;
+    border-right: 1px solid lightgrey; */
     outline: none;
     color: #AAA;
     line-height: 1.5rem;
@@ -53,7 +62,31 @@ a{
     font-size: 1.2em;
 }
 
-html, body {
+/* Form msg unirversal styling starts */
+.msg {
+    width: 100%;
+    margin: 5px auto;
+    padding: 8px;
+    border-radius: 5px;
+    list-style: none;
+}
+
+.success {
+    color: green;
+    border: 1px solid #3a6e3a;
+    background: #bcf5bc;
+}
+
+.success {
+    color: #884b4b;
+    border: 1px solid #884b4b;
+    background: #f5bcbc;
+}
+
+/* Form msg unirversal styling Endss */
+
+html,
+body {
     height: 100%;
     padding: 0px;
     margin: 0px;
@@ -154,23 +187,25 @@ header .menu-toggle {
 /* Main style Ends*/
 
 /* Content style Starts*/
+/* ************************************************************************* */
 
-.content{
+.content {
     width: 90%;
     margin: 30px auto 30px;
 }
 
-.content .main-content{
+/* ************************************************************************* */
+
+.content .main-content {
     width: 70%;
     float: left;
-    
 }
 
-.content .main-content .recent-post-title{
+.content .main-content .recent-post-title {
     margin: 20px;
 }
 
-.content .main-content .post{
+.content .main-content .post {
     width: 95%;
     height: 270px;
     position: relative;
@@ -178,99 +213,110 @@ header .menu-toggle {
     border-radius: 5px;
     background: #fff;
 }
-.content .main-content .post .read-more{
+
+.content .main-content .post .read-more {
     position: absolute;
     bottom: 10px;
     right: 10px;
     border: 1px solid #005255;
     background: transparent;
     border-radius: 0px;
-    color:#005255 !important;
+    color: #005255 !important;
 }
-.content .main-content .post .read-more:hover{
+
+.content .main-content .post .read-more:hover {
     background: #005255;
     color: #fff !important;
     transition: .25s;
 }
-.content .main-content .post .post-image{
+
+.content .main-content .post .post-image {
     width: 40%;
     height: 100%;
     float: left;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
-.content .main-content .post .post-preview{
+.content .main-content .post .post-preview {
     width: 60%;
     padding: 10px;
     float: right;
 }
 
 
-.content .sidebar{
+/* ************************************************************************* */
+
+.content .sidebar {
     width: 30%;
     float: left;
-    height: 300px;
-    
 }
- /* single.html Style Starts */
- .content .main-content.single{
+
+
+/* single.html Style Starts */
+.content .main-content.single {
     background: #fff;
     padding: 20px 50px;
     font-size: 1.1em;
     border-radius: 5px;
- }
- .content .main-content.single .post-title{
+}
+
+.content .main-content.single .post-title {
     text-align: center;
     margin-bottom: 40px;
- }
+}
 
- .content .popular .post{
+.content .popular .post {
     /* border: 1px solid rgb(222, 221, 221); */
     margin-top: 10px;
     padding-top: 10px;
-    
- }
- .content .popular .post img{
+
+}
+
+.content .popular .post img {
     height: 60px;
     width: 60px;
     float: left;
     margin-right: 10px;
- }
-  /* single.html Style Endss */
+}
+
+/* single.html Style Endss */
 
 
 
 /* Sidebar Style Starts */
 
-.content .sidebar .section{
+.content .sidebar .section {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
 }
 
-.content .sidebar .section .section-titles{
+.content .sidebar .section .section-titles {
     margin: 10px 0px 10px 0px;
 
 }
-.content .sidebar .section.search{
+
+.content .sidebar .section.search {
     margin-top: 80px;
 }
 
-.content .sidebar .section.topics ul{
+.content .sidebar .section.topics ul {
     margin: 0px;
     padding: 0px;
     list-style: none;
     border-top: 1px solid #bcbcbc;
 }
 
-.content .sidebar .section.topics ul li a{
+.content .sidebar .section.topics ul li a {
     display: block;
     padding: 15px 0px 15px 0px;
     border-bottom: 1px solid #bcbcbc;
     transition: all 0.3s;
 }
 
-.content .sidebar .section.topics ul li a:hover{
+.content .sidebar .section.topics ul li a:hover {
     padding-left: 10px;
     transition: all 0.3s;
 }
@@ -282,23 +328,25 @@ header .menu-toggle {
 
 
 /* Post Slider Starts */
-.page-wrapper{
+.page-wrapper {
     min-height: 100%;
 }
 
-.page-wrapper a:hover{
+.page-wrapper a:hover {
     color: #008489;
 }
 
-.post-slider{
+.post-slider {
     position: relative;
 }
-.post-slider .slider-title{
+
+.post-slider .slider-title {
     text-align: center;
     margin: 30px auto;
 
 }
-.post-slider .next{
+
+.post-slider .next {
     position: absolute;
     top: 50%;
     right: 30px;
@@ -306,7 +354,8 @@ header .menu-toggle {
     color: inherit;
     cursor: pointer;
 }
-.post-slider .prev{
+
+.post-slider .prev {
     position: absolute;
     top: 50%;
     left: 30px;
@@ -314,16 +363,17 @@ header .menu-toggle {
     color: inherit;
     cursor: pointer;
 }
-.post-slider .post-wrapper{
+
+.post-slider .post-wrapper {
     width: 84%;
     height: 350px;
     margin: 0px auto;
     padding: 10px 0px 10px 0px;
     overflow: hidden;
-    
+
 }
 
-.post-slider .post-wrapper .post{
+.post-slider .post-wrapper .post {
     width: 300px;
     height: 330px;
     display: inline-block;
@@ -331,13 +381,15 @@ header .menu-toggle {
     margin: 0px 10px;
     border-radius: 5px;
     box-shadow: 1rem 1rem 1rem -1rem grey;
-    
+
 }
-.post-slider .post-wrapper .post .post-info{
+
+.post-slider .post-wrapper .post .post-info {
     height: 130px;
     padding: 0px 5px;
 }
-.post-slider .post-wrapper .post .slider-image{
+
+.post-slider .post-wrapper .post .slider-image {
     width: 100%;
     height: 200px;
     border-top-left-radius: 5px;
@@ -347,45 +399,78 @@ header .menu-toggle {
 
 /* Post Slider Ends */
 
+/* Auth-Pages Style start */
+/* Register form */
+.auth-content {
+    margin-top: 50px;
+    margin-left: 500px;
+    width: 30%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.auth-content .form-title {
+    text-align: center;
+}
+
+.auth-content form div {
+    margin-bottom: 10px;
+
+}
+
+.auth-content form p {
+    text-align: center;
+}
+
+.auth-content form p a {
+    text-decoration: underline;
+}
+
+/* Auth-Pages Style End */
+
+
 /* Footer Style Starts */
 
-.footer{
+.footer {
     background: #303036;
     color: #d3d3d3;
     height: 400px;
     position: relative;
 }
 
-.footer .footer-content{
+.footer .footer-content {
     height: 350px;
     display: flex;
 }
-.footer .footer-content .footer-section{
+
+.footer .footer-content .footer-section {
     flex: 1;
     padding: 25px;
 }
 
 .footer .footer-content h1,
-.footer .footer-content h2{
+.footer .footer-content h2 {
     color: #fff;
 }
 
-.footer .footer-content .about h1 span{
+.footer .footer-content .about h1 span {
     color: aqua;
 }
 
-.footer .footer-content .about .contact span{
+.footer .footer-content .about .contact span {
     display: block;
     font-size: 1.1em;
     margin-bottom: 8px;
 }
-.footer .footer-content .about .contact span{
+
+.footer .footer-content .about .contact span {
     display: block;
     font-family: 'Lora', serif;
 }
 
 
-.footer .footer-content .about .socials a{
+.footer .footer-content .about .socials a {
     border: 1px solid grey;
     width: 45px;
     height: 41px;
@@ -398,45 +483,46 @@ header .menu-toggle {
     transition: all .3s;
 }
 
-.footer .footer-content .about .socials a:hover{
+.footer .footer-content .about .socials a:hover {
     border: 1px solid#fff;
     color: #e00303;
     transition: all .3s;
 }
 
-.footer .footer-content .links ul a{
+.footer .footer-content .links ul a {
     display: block;
     margin-bottom: 10px;
     font-size: 1.2em;
     transition: all .3s;
 }
-.footer .footer-content .links ul a:hover{
-   color: #fff;
-   margin-left: 15px;
-   transition: all .3s;
+
+.footer .footer-content .links ul a:hover {
+    color: #fff;
+    margin-left: 15px;
+    transition: all .3s;
 }
 
-.footer .footer-content .contact-form .contact-input{
+.footer .footer-content .contact-form .contact-input {
     background: #272727;
-    color:#bebdbd;
+    color: #bebdbd;
     margin-bottom: 10px;
     line-height: 1.5rem;
-    padding: .9rem 1.4rem ;
+    padding: .9rem 1.4rem;
     border: none;
 }
 
-.footer .footer-content .contact-form .contact-input:focus{
+.footer .footer-content .contact-form .contact-input:focus {
     background: #1a1a1a;
 }
 
-.footer .footer-content .contact-form .contact-btn{
+.footer .footer-content .contact-form .contact-btn {
     float: right;
     cursor: pointer;
     font-size: 1.1em;
     font-family: 'Lora', serif;
 }
 
-.footer .footer-bottom{
+.footer .footer-bottom {
     width: 100%;
     background: #343a40;
     color: #686868;
@@ -453,6 +539,75 @@ header .menu-toggle {
 /* Footer Style Ends */
 
 /* For Responsive - Media Query Starts */
+
+@media only screen and (max-width: 924px) {
+    .content {
+        width: 100%;
+    }
+
+    .content .main-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .content .sidebar .section.search {
+        margin-top: 20px;
+    }
+
+    .content .main-content .post {
+        width: 100%;
+    }
+
+    .content .sidebar {
+        padding: 10px;
+        width: 100%;
+    }
+
+    /* For footer */
+
+    .footer {
+        height: auto;
+    }
+
+    .footer .footer-content {
+        height: auto;
+        flex-direction: column;
+    }
+    .footer .footer-content .contact-form{
+        padding-bottom: 90px;
+    }
+    .footer .footer-content .contact-form .contact-btn {
+        width: 100%;
+    }
+
+}
+
+/* For footer ends */
+
+/* Posts :vertical starts */
+@media only screen and (max-width: 600px){
+    .content .main-content .post {
+        height: auto;
+    }
+    
+    .content .main-content .post .post-image {
+        width: 100%;
+    }
+    
+    .content .main-content .post .post-preview {
+        width: 100%;
+    }
+    .content .main-content .post .read-more {
+        position: static;
+        display: block;
+        width: 100%;
+        text-align: center;
+     
+    }
+
+}
+
+/* Posts :vertical ends */
 
 @media only screen and (max-width: 750px) {
 
@@ -483,7 +638,8 @@ header .menu-toggle {
         color: #fff;
         padding-left: 50px;
     }
-    header ul li ul a:hover{
+
+    header ul li ul a:hover {
         background-color: #000;
     }
 

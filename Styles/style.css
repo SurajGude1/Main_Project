@@ -89,7 +89,8 @@ html,
 body {
     height: 100%;
     padding: 0px;
-    margin: 0px;
+    /* margin: 0px; edited to below*/
+    margin-top: 50px;
     background-color: #f6f6f6f6;
     font-family: 'lora', serif;
 }
@@ -97,6 +98,13 @@ body {
 header {
     background: #008489;
     height: 66px;
+    /* edited below */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 10px;
+    z-index: 1000;
 }
 
 header * {
@@ -601,7 +609,14 @@ header .menu-toggle {
     }
 
     header {
-        position: relative;
+        /* before relative */
+        position: fixed; 
+        /* edited below */
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: 10px;
+        z-index: 1000;
     }
     .main-content-wrapper{
         padding: 10px;

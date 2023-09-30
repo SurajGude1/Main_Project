@@ -508,7 +508,7 @@ header .menu-toggle {
 
 .footer .footer-content .about .socials a:hover {
     border: 1px solid#fff;
-    color: #02743d;
+    background-color: #02743d;
     transition: all .3s;
 }
 
